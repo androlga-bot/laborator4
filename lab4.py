@@ -37,7 +37,7 @@ class entity:
         if self.life+self.regen_Life<=self.life_Equiv:
             self.life+=self.regen_Life
         else:
-            self.life=self.Life_Equiv
+            self.life=self.life_Equiv
 
     def  heal(self, mana):
         if self.mana-mana>=0:
