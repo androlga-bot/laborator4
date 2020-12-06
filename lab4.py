@@ -98,9 +98,9 @@ class Warrior(Entity):
         self.mana_Equiv = 10 * level
         self.regen_Mana = self.mana_Equiv / 5
         self.life_Equiv = 30 * level
-        self.mana = mana_Equiv
-        self.life = life_Equiv
-        self.regen_Life = life_Equiv / 2
+        self.mana = self.mana_Equiv
+        self.life = self.life_Equiv
+        self.regen_Life = self.life_Equiv / 2
         self.damage = 4 * level
 
         
