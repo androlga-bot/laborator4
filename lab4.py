@@ -12,19 +12,19 @@ class Entity:
     status = 'Alive'
 
 
-    def get_Pos(self):
+    def get_pos(self):
         return self.position
 
 
-    def get_Mana(self):
+    def get_mana(self):
         return self.mana
 
 
-    def get_Life(self):
+    def get_life(self):
         return self.life
 
 
-    def get_Name(self):
+    def get_name(self):
         return self.name
 
 
@@ -62,7 +62,7 @@ class Entity:
             self.status='Dead'
 
 
-class Player(entity):
+class Player(Entity):
     def __init__(self, name, level):
         super().__init__()
         self.name = name
@@ -76,7 +76,7 @@ class Player(entity):
         self.damage = 3 * level
 
 
-class Mage(entity):
+class Mage(Entity):
     def __init__(self, name, level):
         super().__init__()
         self.name = name
@@ -90,7 +90,7 @@ class Mage(entity):
         self.damage = 2 * level
 
 
-class Warrior(entity):
+class Warrior(Entity):
     def __init__(self, name, level):
         super().__init__()
         self.name = name
@@ -105,7 +105,7 @@ class Warrior(entity):
 
         
 
-class Mob(entity):
+class Mob(Entity):
     def __init__(self, name, level):
         super().__init__()
         self.name = name
